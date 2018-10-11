@@ -4,7 +4,7 @@ console.log('Hello Deonta');
 const form = document.querySelector('form');
 const loadingElement = document.querySelector('.loading');
 const mewsElement = document.querySelector('.mews');
-const API_URL = 'http://localhost:5000/mews';
+const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000/mews' : 'https://meower-api.now.sh/mews';
 // end of variables
 
 // all executed cmds except adding the event listener
